@@ -1,0 +1,26 @@
+{
+  "name": "unlar-vr",
+  "version": "1.0.0",
+  "description": "A virtual reality demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aguvilte/UNLaR-VR.git"
+  },
+  "author": "Agustín Vilte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aguvilte/UNLaR-VR/issues"
+  },
+  "homepage": "https://github.com/aguvilte/UNLaR-VR#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "ejs": "^2.5.6",
+    "path": "^0.12.7"
+  }
+}

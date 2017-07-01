@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.2.0/aframe.js"></script>
+    </head>
+    <body>
+      <a-scene>
+        <a-assets>
+          <img id="wall" src="img/wall.jpg">
+          <img id="floor" src="img/floor.jpg">
+          <img id="ceiling" src="img/ceiling.jpg">
+        </a-assets>
+
+        <a-sky color="#6EBAA7"></a-sky>
+        <!-- PAREDES -->
+          <!-- verticales -->
+          <a-plane src="#wall" height="5" width="12" position="-2.5 2.5 -1" rotation="0 90 0"></a-plane>
+          <a-plane src="#wall" height="5" width="12" position="-2.5 2.5 -1" rotation="0 -90 0"></a-plane>
+
+          <a-plane src="#wall" height="5" width="6" position="-2.5 2.5 -12" rotation="0 90 0"></a-plane>
+          <a-plane src="#wall" height="5" width="6" position="-2.5 2.5 -12" rotation="0 -90 0"></a-plane>
+          <a-plane src="#wall" height="1,5" width="2" position="-2.5 4.5 -8" rotation="0 90 0"></a-plane>
+
+          <a-plane src="#wall" height="5" width="20" position="-18.5 2.5 -5" rotation="0 90 0"></a-plane>
+
+          <!-- horizontales -->
+          <a-plane src="#wall" height="5" width="16" position="-10.5 2.5 -15"></a-plane>
+          <a-plane color="white" height="3" width="12" position="-10.5 2.5 -14.9"></a-plane>
+
+          <a-plane src="#wall" height="5" width="16" position="-10.5 2.5 5"></a-plane>
+          <a-plane src="#wall" height="5" width="16" position="-10.5 2.5 5" rotation="0 -180 0"></a-plane>
+
+        <!-- PISOS -->
+        <a-plane src="#floor" height="30" width="5" rotation="-90 0 0" position="0 0 -10"></a-plane>
+        <a-plane src="#floor" height="20" width="16" rotation="-90 0 0" position="-10.5 0 -5"></a-plane>
+        <!-- <a-plane color="gray" height="5" width="8" position="5 2.5 0" rotation="0 -90 0"></a-plane> -->
+
+        <!-- TECHOS -->
+        <a-plane src="#ceiling" height="30" width="5" rotation="90 0 0" position="0 5 -10"></a-plane>
+        <a-plane src="#ceiling" height="20" width="16" rotation="90 0 0" position="-10.5 5 -5"></a-plane>
+
+        <!-- <a-box color="black" depth="1" height="1.6" width="8" position="-1 0.6 -1.5"></a-box> -->
+      </a-scene>
+    </body>
+</html>
